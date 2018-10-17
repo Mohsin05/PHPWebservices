@@ -19,10 +19,11 @@
     $isAuthenticated = false;
     $username = (string)$dataReceived['username'];
     $passwordLogin = (string)$dataReceived['password'];
+    $salt="M@Y@N!.41AS-0asd*";
+    $passwordEncr = crypt($passwordLogin,$salt);
 
 
-
-    $sql="SELECT user_id,user_name,email,date_created FROM user WHERE (email = '$username' || user_name = '$username') AND password = '$passwordLogin'";
+    $sql="SELECT user_id,user_name,email,date_created FROM user WHERE (email = '$username' || user_name = '$username') AND password = '$passwordEncr'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {

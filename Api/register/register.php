@@ -19,13 +19,13 @@
     $username = (string)$dataReceived['usernamesignup'];
     $emailsignup = (string)$dataReceived['emailsignup'];
     $passwordsignup = (string)$dataReceived['passwordsignup'];
+    $date = date("Y-m-d");
 
-
-
+    $salt="M@Y@N!.41AS-0asd*";
+    $passwordEncr = crypt($passwordsignup,$salt);
     //inserting into data base
-
         $sql = "INSERT INTO user (user_name, email, password, date_created)
-        VALUES ('$username','$emailsignup','$passwordsignup','2018-11-09')";
+        VALUES ('$username','$emailsignup','$passwordEncr','$date')";
 
         if (mysqli_query($conn, $sql)) {
 

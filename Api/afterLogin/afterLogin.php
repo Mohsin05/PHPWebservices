@@ -25,10 +25,8 @@
         $sql = "INSERT INTO content (fk_user_id,content,created_at) VALUES ('$user_id','$content','$date')";
 
         if (mysqli_query($conn, $sql)) {
-
-            array_push($dataResponse, ['status'=>'success']);
+            //array_push($dataResponse, ['status'=>'success']);
             };
-
     }
 
     //getting the data
@@ -42,8 +40,9 @@
                 'created_at' => $row['created_at']
             ]);
         }
-    }
 
+
+    }
 
     //always send data in json_encode form array to json.
 

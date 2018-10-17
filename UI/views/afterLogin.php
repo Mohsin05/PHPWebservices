@@ -34,9 +34,8 @@
     </div>
 
 
-    <div class="history">
-
-        <h2 class=" alert alert-info" style="min-width: 12%">History</h2>
+    <div class="history" id="history">
+        <h2 class=" alert alert-info" style="width: 130px">History</h2>
         <span id="dateButton"></span>
     </div>
 

@@ -73,15 +73,15 @@ if ($_SESSION["isAuthenticated"] == true) {
                         </p>
                         <p>
                             <label for="emailsignup" class="youmail"  > Your email</label>
-                            <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/>
+                            <input id="emailsignup" required="required" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/>
                         </p>
                         <p>
                             <label for="passwordsignup" class="youpasswd" >Your password </label>
-                            <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                            <input id="passwordsignup" required="required" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
                         </p>
                         <p>
                             <label for="passwordsignup_confirm" class="youpasswd" >Please confirm your password </label>
-                            <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
+                            <input id="passwordsignup_confirm" required="required" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO"/>
                         </p>
                         <p class="signin button">
                             <button type="submit" id= "registerButton" class="btn btn-primary">Register</button>
